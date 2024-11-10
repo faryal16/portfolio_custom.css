@@ -1,0 +1,121 @@
+/* Skills Section */
+.skills h2{
+    margin-bottom: 5rem;
+    font-size: 5em;
+    text-align: center;
+}
+
+.skills-contanier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.skills-contanier .skills-box{
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+.skills-contanier .skills-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+.skills-box .icon{
+    margin-left: 40%;
+    margin-bottom: 20px;
+    font-size: 7rem;
+    color:var(--main-color)
+}
+.skills-box h3{
+    font-size: 3.6rem
+}
+.skills-box p {
+    font-size: 2.8rem;
+    margin:0 1rem 3rem;
+
+}
+.skills-box li{
+    font-size: 1.7rem;
+  text-align: left;
+  margin: 1rem;
+    
+}
+
+/* Readmre */
+.content{
+    display: none;
+
+}
+.content p{
+    font-size: 1.4rem;
+}
+#check{
+    display: none;
+    transition: .5s linear;
+}
+label{
+    display: inline-block;
+    cursor: pointer;
+    
+}
+#check:checked ~ .content{
+    display: block;
+}
+
+#check:checked ~ label{
+    visibility:collapse;
+}
+#check:checked ~ label::after{
+    content: 'Show Less';
+    display: block;
+    visibility: visible;
+    color: var(--main-color);
+}
+
+#check-2{
+    display: none;
+    transition: .5s linear;
+
+}
+
+#check-2:checked ~ .content{
+    display: block;
+} 
+
+ #check-2:checked ~ label{
+    visibility: collapse;
+}
+#check-2:checked ~ label::after{
+    content: 'Show Less';
+    display: block;
+    visibility: visible;
+    color: var(--main-color);
+}
+
+
+#check-3{
+    display: none;
+    transition: .5s linear;
+
+}
+
+#check-3:checked ~ .content{
+    display: block;
+} 
+
+ #check-3:checked ~ label{
+    visibility: collapse;
+}
+#check-3:checked ~ label::after{
+    content: 'Show Less';
+    display: block;
+    visibility: visible;
+    color: var(--main-color);
+}
+

@@ -1,0 +1,49 @@
+
+/*  Contact Section */
+.contact{
+    background: var(--bg-color);
+}
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+.contact h2{
+margin-bottom: 3rem;
+}
+
+.contact form{
+    min-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box ,
+.contact form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 2rem;
+    color: var(--main-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn{
+margin-top: 2rem;
+cursor: pointer;
+}
