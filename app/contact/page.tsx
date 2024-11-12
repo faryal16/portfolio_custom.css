@@ -1,6 +1,6 @@
 import "@/app/contact/contact.css";
 
-const Contact = () => {
+const contact = () => {
   return (
     <section className="contact" id="contact">
     <h2 className="heading">Contact <span>Me!</span></h2>
@@ -23,4 +23,4 @@ const Contact = () => {
   )
 }
 
-export default Contact;
+export default contact;

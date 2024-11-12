@@ -1,12 +1,16 @@
-import Herosection from '@/componenets/Herosection'
-import React from 'react'
+"use client"
+import Herosection from '@/componenets/Herosection';
+
 
 const Home = () => {
   return (
     <div >
+      
       <Herosection/>
     </div>
   )
 }
 
 export default Home;
+
+

@@ -1,11 +1,11 @@
-import "@/app/skills/skills.css"
+import "@/app/skills/skills.css";
 import { GrGraphQl } from "react-icons/gr";
 import { GiMoebiusTriangle } from "react-icons/gi";
 import { FaRegSmile } from "react-icons/fa";
 
 
 
-const Skills = () => {
+const skills = () => {
   return (
     <section className="skills" id="skills">
         <h2 className="heading">My <span>Skills</span></h2>
@@ -80,4 +80,4 @@ const Skills = () => {
   )
 }
 
-export default Skills;
+export default skills;

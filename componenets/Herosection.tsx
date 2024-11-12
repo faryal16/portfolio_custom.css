@@ -11,8 +11,7 @@ const Herosection = () => {
         <h3>Hello, It&#39;s Me</h3>
         <h1>Faryal Junaid</h1>
         <h3>
-          And I&#39;m a
-          <span>
+          And I&#39;m a<span>
             <Typewriter
               options={{
                 strings: [

@@ -1,12 +1,12 @@
 import "@/app/about/about.css"
 import Image from "next/image"
-import about from "@/app/images/7.png"
+import abouts from "@/app/images/7.png"
 
-const About = () => {
+const about = () => {
   return (
     <section className="about" id="about">
         <div className="about-img">
-            <Image src={about} alt=""/>
+            <Image src={abouts} alt=""/>
         </div>
 
         <div className="about-content">
@@ -46,4 +46,4 @@ const About = () => {
   )
 }
 
-export default About;
+export default about;

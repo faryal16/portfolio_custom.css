@@ -1,8 +1,7 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { useRef } from "react";
-import { FaLeaf , FaBars, FaTimes} from "react-icons/fa";
-
+import { FaLeaf, FaBars, FaTimes } from "react-icons/fa";
 
 
 const Header = () => {
@@ -13,27 +12,30 @@ const Header = () => {
       navRef.current.classList.toggle("responsive_nav");
     }
   };
-
-
   return (
     <header className="header">
-    <a href="#" className="logo">CodeWithFairy<FaLeaf /></a>
+      <a href="#" className="logo">
+        CodeWithFairy
+        <FaLeaf />
+      </a>
+      <nav className="navbar" ref={navRef}>
+        <Link href="/page" className="active">
+          Home
+        </Link>
+        <Link href="/skills">My Skills</Link>
+        <Link href="/about">About</Link>
+        <Link href="/services">Services</Link>
+        <Link href="/portfolio">Portfolio</Link>
+        <Link href="/contact">Contact</Link>
+        <button className="nav_btn nav_btn-close" onClick={showNavbar}>
+          <FaTimes />
+        </button>
+      </nav>
+      <button className="nav_btn" onClick={showNavbar}>
+        <FaBars />
+      </button>
+    </header>
+  );
+};
 
-    
-
-    <nav className="navbar" ref={navRef} >
-      <Link href="./" className="active">Home</Link>
-      <Link href="./about">About</Link>
-      <Link href="./skills">My Skills</Link>
-      <Link href="./services">Services</Link>
-      <Link href="./portfolio">Protfolio</Link>
-      <Link href="./contact">Contact</Link>
-
-      <button className="nav_btn nav_btn-close" onClick={showNavbar}><FaTimes/></button>
-    </nav>
-    <button className="nav_btn"  onClick={showNavbar} > <FaBars/> </button>
-  </header>
-  )
-}
-
-export default Header
+export default Header;

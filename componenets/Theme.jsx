@@ -8,41 +8,57 @@ import "@/componenets/themes.css"
 import { useEffect, useState } from "react";
 
 
-const getStorageColor = () => {
-    let color  = 'hsl(19, 96%, 52%)';
-    if(localStorage.getItem('color')){
-        color = localStorage.getItem('color');
-    }
-    return color;
-}
+// const getStorageColor = () => {
+//     let color = 'hsl(19, 96%, 52%)';
+//     if (localStorage.getItem('color')) {
+//         color = localStorage.getItem('color');
+//     }
+//     return color;
+// };
 
+// const getStorageTheme = () => {
+//     return localStorage.getItem('theme') || "light-theme";
+// };
 
 const Theme = () => {
-const [showSwitcher , setShowSwitcher] = useState(false);
-const [color, setColor] = useState(getStorageColor());
-const [theme, setTheme] = useState("light-theme");
+    const [showSwitcher , setShowSwitcher] = useState(false);
+    // const [color , setColor] = useState(getStorageColor());
+    // const [theme , setTheme] = useState(getStorageTheme())
+    const [color , setColor] = useState('hsl(339, 71%, 38% )');
+    const [theme , setTheme] = useState('light-theme')
 
-const changeColor =(color) => {
-    setColor(color);
-};
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const storedColor = localStorage.getItem('color') || 'hsl(339, 71%, 38% )';
+            const storedTheme = localStorage.getItem('theme') || 'light-theme';
+            setColor(storedColor);
+            setTheme(storedTheme);
+        }
+    }, []);
 
-const toggleTheme = () => {
-    if (theme === "light-theme"){
-        setTheme("dark-theme");
-    }else{
-        setTheme("light-theme");
-    }
-};
+    const changeColor = (color ) => {
+        setColor(color);
+    };
 
-useEffect(( ) => {
-    document.documentElement.style.setProperty('--main-color', color);
-    localStorage.setItem('color' , color);
-}, [color]);
+    const toggleTheme = () => {
+        setTheme((prevTheme) => (prevTheme === 'light-theme' ? 'dark-theme' : 'light-theme'));
+    };
 
-useEffect(() => {
-    document.documentElement.className = theme;
-}, [theme]);
 
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            document.documentElement.style.setProperty('--main-color', color);
+            localStorage.setItem('color', color);
+        }
+    }, [color]);
+    
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            document.documentElement.className = theme;
+            localStorage.setItem('theme', theme);
+        }
+    }, [theme]);
   return (
     <div>
         <div className={`${showSwitcher ? 'show_switcher' : ''} style_switcher`}>
@@ -65,4 +81,4 @@ useEffect(() => {
   )
 }
 
-export default Theme
+export default Theme;
