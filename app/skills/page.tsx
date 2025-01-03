@@ -15,7 +15,7 @@ const skills = () => {
               <input type="checkbox" id="check" />
               <GrGraphQl size={60} className="icon"/>
                 <h3>Technical Skills</h3>
-                <p>
+                
                   <ul>
                     <li>Web development</li>
                     <li>Coding</li>
@@ -25,7 +25,7 @@ const skills = () => {
                     <li>Next.js</li>
                     <li>Tailwind.css</li>
                   </ul>
-                </p>
+                
                 <div className="content">
                   <p>Technical skills are the specialized knowledge and expertise required to perform specific tasks and use specific tools and programs in real-world situations. </p>
                 </div>
@@ -36,7 +36,7 @@ const skills = () => {
               <input type="checkbox" id="check-2" />
               <GiMoebiusTriangle size={60} className="icon"/>
                 <h3>Creative Skills</h3>
-                <p>
+                
                   <ul>
                     <li>Problem solving</li>
                     <li>Collaboration</li>
@@ -46,7 +46,7 @@ const skills = () => {
                     <li>Abstract thinking</li>
                     <li>Photography</li>
                   </ul>
-                </p>
+             
                 <div className="content">
                   <p>Creativity skills include the ability to think about a problem or a task in a new way and use imagination to come up with new ideas.</p>
                 </div>
@@ -57,7 +57,7 @@ const skills = () => {
               <input type="checkbox" id="check-3" />
               <FaRegSmile size={60} className="icon" />
                 <h3>Soft Skills</h3>
-                <p>
+              
                   <ul>
                     <li>Creativity</li>
                     <li>Teamwork</li>
@@ -67,7 +67,7 @@ const skills = () => {
                     <li>Time management</li>
                     <li>Leadership</li>
                   </ul>
-                </p>
+                
                 <div className="content">
                   <p>Soft skills can also be thought of as people skills. These can include good communication and interpersonal skills, leadership, problem-solving, work ethic, time management, and teamwork. </p>
                 </div>

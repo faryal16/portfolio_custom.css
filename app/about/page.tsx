@@ -18,25 +18,25 @@ const about = () => {
             <div className="content" id="flex" >
     <div className="aboutMore">
       <h2>Education</h2>
-      <p>
+      
         <ul>
           <li><span>Degree: </span>Master&#39;s in Arts</li>
           <li><span>Subject: </span>Islamic Studies</li>
           <li><span>University: </span>Karachi University</li>
           <li><span>Passing Year: </span>2020</li>
         </ul>
-      </p>
+    
     </div>
     <div className="aboutMore">
       <h2>Experience</h2>
-      <p>
+     
         <ul>
           <li><span>Online Tution: </span> 2012-Present</li>
           <li><span>Intership: </span> 2023-2024</li>
           <li><span>CodeAlpha: </span>Six Months</li>
           <li><span>Freelancer:</span>2024-Present</li>
         </ul>
-      </p>
+   
     </div>
         </div>
 

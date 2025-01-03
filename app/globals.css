@@ -41,7 +41,7 @@ body{
 }
 
 section{
-    min-height: 100vh;
+    min-height: 100%;
     width:100%;
     padding: 8rem 3% 1rem;
 }
@@ -85,6 +85,7 @@ header .nav_btn {
 
 header .responsive_nav{
     transform: none;
+    
 }
 
 .navbar a{
@@ -93,10 +94,14 @@ header .responsive_nav{
     margin-left: 4rem;
     transition: .3s;
 }
+.navbar a:active{
+    color:var(--main-color)
+}
 
-.navbar a:hover,
-.navbar a.active{
+.navbar a:hover
+{
     color: var(--main-color);
+    font-size: 2rem;
 }
 
 
@@ -221,14 +226,14 @@ span{
         position: fixed;
 		top: -100vh;
 		left: 0;
-		height: 50%;
+		height: 70%;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
         gap: 3rem;
-		background-color:var(--main-color);
+		background-color:rosybrown;
         color: var(--second-bg-color);
 		transition: 1s;
 	}
@@ -290,9 +295,9 @@ span{
     html{
         font-size: 60%;
     }
-    section{
-        max-height: 30%;
-    }
+    /* section{
+        height: 30%;
+    } */
     
     
     

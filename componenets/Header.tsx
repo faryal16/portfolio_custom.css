@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+
 import { useRef } from "react";
 import { FaLeaf, FaBars, FaTimes } from "react-icons/fa";
 
@@ -19,14 +19,14 @@ const Header = () => {
         <FaLeaf />
       </a>
       <nav className="navbar" ref={navRef}>
-        <Link href="/page" className="active">
+        <a href="/" className="active">
           Home
-        </Link>
-        <Link href="/skills">My Skills</Link>
-        <Link href="/about">About</Link>
-        <Link href="/services">Services</Link>
-        <Link href="/portfolio">Portfolio</Link>
-        <Link href="/contact">Contact</Link>
+        </a>
+        <a href="/skills">My Skills</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/contact">Contact</a>
         <button className="nav_btn nav_btn-close" onClick={showNavbar}>
           <FaTimes />
         </button>
